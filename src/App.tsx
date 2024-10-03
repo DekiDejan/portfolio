@@ -1,4 +1,4 @@
-import PaintComponent from "./components/paint.jsx";
+import PaintComponent from "./components/paint.js";
 
 function App() {
   return (

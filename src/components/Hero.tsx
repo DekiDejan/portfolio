@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
           </p>
           <a
             href="#"
-            className="text-white text-2xl bg-[#3A4231] w-full text-center my-7 py-3"
+            className="text-white text-2xl bg-[#3A4231] w-full text-center my-7 py-3 flex justify-center hover:opacity-90 duration-150"
           >
             <span className="opacity-90 mr-4">CONTACT ME</span>
             <img src={arrowDown} alt="Arrow down icon" className="inline" />
@@ -34,6 +34,7 @@ const Hero: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               href="https://github.com/DekiDejan"
+              className="hover:scale-110 duration-150"
             >
               <img src={githubIcon} alt="GitHub icon" />
             </a>
@@ -41,10 +42,15 @@ const Hero: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               href="https://www.linkedin.com/in/dejan-mironski-panchevski/"
+              className="hover:scale-110 duration-150"
             >
               <img src={linkedinIcon} alt="LinkedIn icon" />
             </a>
-            <a href={cvFile} download="CV - Dejan Mironski Panchevski">
+            <a
+              href={cvFile}
+              download="CV - Dejan Mironski Panchevski"
+              className="hover:scale-110 duration-150"
+            >
               <img src={cvIcon} alt="CV icon" />
             </a>
           </div>

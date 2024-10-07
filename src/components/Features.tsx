@@ -15,7 +15,7 @@ const Features: React.FC = () => {
         <div className="flex justify-between items-center mb-8 hover:scale-105 duration-300">
           <div>
             <h3 className="text-5xl text-white opacity-90 font-bold mb-4">
-              FEELING CREATIVE
+              FEELING CREATIVE?
             </h3>
             <p className="text-xl font-light text-white opacity-90">
               Use this paint replica and save your creation
@@ -38,7 +38,7 @@ const Features: React.FC = () => {
           </div>
           <div>
             <h3 className="text-5xl text-white opacity-90 font-bold mb-4">
-              FEELING COMPETITIVE
+              FEELING COMPETITIVE?
             </h3>
             <p className="text-xl font-light text-white opacity-90">
               Play this classic game against computer and test your skills

@@ -6,3 +6,14 @@ body {
   background-color: #628340;
   font-family: "Roboto", system-ui;
 }
+
+.swiper-button-prev {
+  color: #628340;
+  margin-left: -100px;
+}
+
+.swiper-button-next {
+  color: #628340;
+  background-image: url("paper.gif");
+  margin-right: -100px;
+}

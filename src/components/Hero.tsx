@@ -14,23 +14,25 @@ const Hero: React.FC = () => {
     >
       <div className="flex h-full mx-36">
         <div className="basis-1/2 flex flex-col items-center justify-center h-full text-[#3A4231]">
-          <h1 className="text-9xl font-['Caveat'] tracking-[50px] -mr-6">
-            DEJAN
-          </h1>
-          <h2 className="text-7xl font-bold mt-4 mb-12">WEB DEVELOPER</h2>
-          <p className="text-xl text-white font-light opacity-90">
+          <div className="animate-slideFromLeft">
+            <h1 className="text-9xl font-['Caveat'] tracking-[50px] -mr-6">
+              DEJAN
+            </h1>
+            <h2 className="text-7xl font-bold mt-4 mb-12">WEB DEVELOPER</h2>
+          </div>
+          <p className="text-xl text-white font-light opacity-90 animate-slideFromBottom">
             With a background in design, I bring creativity and technical
             expertise to build intuitive, modern web applications
           </p>
           <a
             href="#"
-            className="text-white text-2xl bg-[#3A4231] w-full text-center my-7 py-3 flex justify-center hover:opacity-90 duration-150"
+            className="text-white text-2xl bg-[#3A4231] w-full text-center my-7 py-3 flex justify-center hover:opacity-90 duration-150 animate-slideFromBottom"
           >
             <span className="opacity-90 mr-4">CONTACT ME</span>
             <img src={arrowDown} alt="Arrow down icon" className="inline" />
           </a>
-          <div className="flex gap-8 opacity-90">
-            <div className="hover:scale-110 duration-150">
+          <div className="flex gap-8">
+            <div className="opacity-0 animate-popUp1">
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -39,7 +41,7 @@ const Hero: React.FC = () => {
                 <img src={githubIcon} alt="GitHub icon" />
               </a>
             </div>
-            <div className="hover:scale-110 duration-150">
+            <div className="opacity-0 animate-popUp2">
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -48,7 +50,7 @@ const Hero: React.FC = () => {
                 <img src={linkedinIcon} alt="LinkedIn icon" />
               </a>
             </div>
-            <div className="hover:scale-110 duration-150">
+            <div className="opacity-0 animate-popUp3">
               <a href={cvFile} download="CV - Dejan Mironski Panchevski">
                 <img src={cvIcon} alt="CV icon" />
               </a>

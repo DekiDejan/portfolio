@@ -2,6 +2,7 @@ import Features from "./components/Features";
 import Hero from "./components/Hero";
 import Loader from "./components/Loader";
 import { useState, useEffect } from "react";
+import Projects from "./components/Projects";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -23,6 +24,7 @@ function App() {
     <>
       <Hero />
       <Features />
+      <Projects />
     </>
   );
 }

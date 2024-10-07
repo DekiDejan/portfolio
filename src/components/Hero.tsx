@@ -30,29 +30,29 @@ const Hero: React.FC = () => {
             <img src={arrowDown} alt="Arrow down icon" className="inline" />
           </a>
           <div className="flex gap-8 opacity-90">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/DekiDejan"
-              className="hover:scale-110 duration-150"
-            >
-              <img src={githubIcon} alt="GitHub icon" />
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.linkedin.com/in/dejan-mironski-panchevski/"
-              className="hover:scale-110 duration-150"
-            >
-              <img src={linkedinIcon} alt="LinkedIn icon" />
-            </a>
-            <a
-              href={cvFile}
-              download="CV - Dejan Mironski Panchevski"
-              className="hover:scale-110 duration-150"
-            >
-              <img src={cvIcon} alt="CV icon" />
-            </a>
+            <div className="hover:scale-110 duration-150">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/DekiDejan"
+              >
+                <img src={githubIcon} alt="GitHub icon" />
+              </a>
+            </div>
+            <div className="hover:scale-110 duration-150">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/dejan-mironski-panchevski/"
+              >
+                <img src={linkedinIcon} alt="LinkedIn icon" />
+              </a>
+            </div>
+            <div className="hover:scale-110 duration-150">
+              <a href={cvFile} download="CV - Dejan Mironski Panchevski">
+                <img src={cvIcon} alt="CV icon" />
+              </a>
+            </div>
           </div>
         </div>
       </div>

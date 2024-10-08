@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
             expertise to build intuitive, modern web applications
           </p>
           <a
-            href="#"
+            href="#about"
             className="text-white text-2xl bg-[#3A4231] w-full text-center my-7 py-3 flex justify-center hover:opacity-90 duration-150 animate-slideFromBottom"
           >
             <span className="opacity-90 mr-4">CONTACT ME</span>

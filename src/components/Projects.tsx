@@ -1,3 +1,4 @@
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, EffectCube, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -18,12 +19,12 @@ import nextIcon from "../assets/icons/technologies/nextjs-icon-svgrepo-com.svg";
 import gitIcon from "../assets/icons/technologies/git.png";
 import githubIcon from "../assets/icons/technologies/github.png";
 
-const Projects = () => {
+const Projects: React.FC = () => {
   return (
     <>
       <div className="bg-white w-full">
         <div className="w-full h-20 bg-gradient-to-t from-transparent to-[#628340]"></div>
-        <h3 className="text-center text-5xl text-[#628340] font-bold pt-24 pb-12">
+        <h3 className="text-center text-5xl text-[#628340] font-bold py-12">
           MY PROJECTS
         </h3>
         <div className="mx-auto w-2/3">

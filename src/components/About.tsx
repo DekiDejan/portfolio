@@ -1,6 +1,32 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const About: React.FC = () => {
+  const formElement = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_0stt544",
+        "template_iye4uo8",
+        formElement.current as HTMLFormElement,
+        {
+          publicKey: "Ryh5__SAp4AnHvaq7",
+        }
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+    formElement.current?.reset();
+  };
+
   return (
     <div className="pt-12 pb-24 mx-36">
       <h3
@@ -32,10 +58,32 @@ const About: React.FC = () => {
             others in the field
           </p>
         </div>
-        <div className="basis-1/2">
+        <div className="basis-1/2 flex flex-col">
           <p className="text-white text-xl font-bold uppercase">
             Feel free to contact me and I will get back to you as soon as I can
           </p>
+          <form
+            ref={formElement}
+            onSubmit={sendEmail}
+            className="mt-6 flex flex-col gap-6 grow"
+          >
+            <input
+              type="email"
+              name="email"
+              placeholder="Your e-mail"
+              className="p-4 placeholder-black placeholder-opacity-30 text-xl"
+            />
+            <textarea
+              name="message"
+              placeholder="Your message"
+              className="p-4 grow placeholder-black placeholder-opacity-30 text-xl"
+            />
+            <input
+              type="submit"
+              value="SEND MESSAGE"
+              className="py-4 bg-white text-[#628340] cursor-pointer text-xl"
+            />
+          </form>
         </div>
       </div>
     </div>

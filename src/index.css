@@ -14,6 +14,9 @@ body {
 
 .swiper-button-next {
   color: #628340;
-  background-image: url("paper.gif");
   margin-right: -100px;
+}
+
+.swiper-cube .swiper-cube-shadow:before {
+  background: #628340;
 }

@@ -9,7 +9,7 @@ import cvFile from "../assets/CV - Dejan Mironski Panchevski.pdf";
 const Hero: React.FC = () => {
   return (
     <div
-      className="h-screen w-full bg-cover bg-center"
+      className="h-screen w-full bg-cover bg-center animate-fastOpacity"
       style={{ backgroundImage: `url(${desktopBg})` }}
     >
       <div className="flex h-full mx-36">

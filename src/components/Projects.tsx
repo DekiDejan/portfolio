@@ -7,6 +7,17 @@ import "swiper/css/effect-cube";
 import countriesImage from "../assets/countries-ss.png";
 import formImage from "../assets/form-ss.png";
 
+import htmlIcon from "../assets/icons/technologies/html.png";
+import figmaIcon from "../assets/icons/technologies/figma.png";
+import cssIcon from "../assets/icons/technologies/css.png";
+import javascriptIcon from "../assets/icons/technologies/js.png";
+import tailwindIcon from "../assets/icons/technologies/tailwind-css.png";
+import reactIcon from "../assets/icons/technologies/react.png";
+import typescriptIcon from "../assets/icons/technologies/typescript.png";
+import nextIcon from "../assets/icons/technologies/nextjs-icon-svgrepo-com.svg";
+import gitIcon from "../assets/icons/technologies/git.png";
+import githubIcon from "../assets/icons/technologies/github.png";
+
 const Projects = () => {
   return (
     <>
@@ -19,8 +30,10 @@ const Projects = () => {
           <Swiper
             effect={"cube"}
             loop={true}
+            speed={1500}
             modules={[Navigation, EffectCube, Autoplay]}
             navigation
+            grabCursor
             slidesPerView={1}
             cubeEffect={{
               shadow: true,
@@ -31,6 +44,7 @@ const Projects = () => {
             autoplay={{
               delay: 3000,
               disableOnInteraction: false,
+              pauseOnMouseEnter: true,
             }}
           >
             <SwiperSlide>
@@ -56,6 +70,69 @@ const Projects = () => {
         <h3 className="text-center text-5xl text-[#628340] font-bold pt-12 pb-12">
           SKILLS
         </h3>
+        <div className="mx-auto w-2/3 flex justify-center gap-4 pb-24">
+          <img
+            src={figmaIcon}
+            alt="Figma icon"
+            width={80}
+            className="hover:scale-125 duration-200"
+          />
+          <img
+            src={htmlIcon}
+            alt="HTML icon"
+            width={80}
+            className="hover:scale-125 duration-200"
+          />
+          <img
+            src={cssIcon}
+            alt="CSS icon"
+            width={80}
+            className="hover:scale-125 duration-200"
+          />
+          <img
+            src={javascriptIcon}
+            alt="JavaScript icon"
+            width={80}
+            className="hover:scale-125 duration-200"
+          />
+          <img
+            src={tailwindIcon}
+            alt="TailwindCSS icon"
+            width={80}
+            className="hover:scale-125 duration-200"
+          />
+          <img
+            src={reactIcon}
+            alt="React icon"
+            width={80}
+            className="hover:scale-125 duration-200"
+          />
+          <img
+            src={typescriptIcon}
+            alt="TypeScript icon"
+            width={80}
+            className="hover:scale-125 duration-200"
+          />
+          <img
+            src={nextIcon}
+            alt="NextJS icon"
+            width={80}
+            className="hover:scale-125 duration-200"
+          />
+          <img
+            src={gitIcon}
+            alt="Git icon"
+            width={80}
+            className="hover:scale-125 duration-200"
+          />
+          <img
+            src={githubIcon}
+            alt="GitHub icon"
+            width={80}
+            className="hover:scale-125 duration-200"
+          />
+        </div>
+        <div className="w-full h-20 bg-gradient-to-b from-transparent to-[#628340]"></div>
       </div>
     </>
   );

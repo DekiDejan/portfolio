@@ -14,8 +14,12 @@ export default {
         },
         popUp: {
           "0%": { transform: "scale(0%)", opacity: "0" },
-          "80%": { transform: "scale(110%)", opacity: "1" },
+          "80%": { transform: "scale(110%)", opacity: "0.8" },
           "100%": { transform: "scale(100%)", opacity: "0.9" },
+        },
+        fastOpacity: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
         },
       },
       animation: {
@@ -24,6 +28,7 @@ export default {
         popUp1: "popUp 0.3s ease forwards 1s",
         popUp2: "popUp 0.3s ease forwards 1.1s",
         popUp3: "popUp 0.3s ease forwards 1.2s",
+        fastOpacity: "fastOpacity 0.2s ease forwards",
       },
     },
   },

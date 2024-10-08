@@ -76,7 +76,7 @@ const About: React.FC = () => {
             <textarea
               name="message"
               placeholder="Your message"
-              className="p-4 grow placeholder-black placeholder-opacity-30 text-xl rounded-sm"
+              className="p-4 grow placeholder-black placeholder-opacity-30 text-xl rounded-sm resize-none"
             />
             <input
               type="submit"

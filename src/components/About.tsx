@@ -71,17 +71,17 @@ const About: React.FC = () => {
               type="email"
               name="email"
               placeholder="Your e-mail"
-              className="p-4 placeholder-black placeholder-opacity-30 text-xl"
+              className="p-4 placeholder-black placeholder-opacity-30 text-xl rounded-sm"
             />
             <textarea
               name="message"
               placeholder="Your message"
-              className="p-4 grow placeholder-black placeholder-opacity-30 text-xl"
+              className="p-4 grow placeholder-black placeholder-opacity-30 text-xl rounded-sm"
             />
             <input
               type="submit"
               value="SEND MESSAGE"
-              className="py-4 bg-white text-[#628340] cursor-pointer text-xl"
+              className="py-4 bg-white text-[#628340] cursor-pointer text-xl rounded-sm"
             />
           </form>
         </div>

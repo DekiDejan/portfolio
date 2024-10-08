@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
           </p>
           <a
             href="#about"
-            className="text-white text-2xl bg-[#3A4231] w-full text-center my-7 py-3 flex justify-center hover:opacity-90 duration-150 animate-slideFromBottom"
+            className="text-white text-2xl bg-[#3A4231] w-full text-center my-7 py-3 flex justify-center hover:opacity-90 duration-150 animate-slideFromBottom rounded-md"
           >
             <span className="opacity-90 mr-4">CONTACT ME</span>
             <img src={arrowDown} alt="Arrow down icon" className="inline" />

@@ -7,6 +7,7 @@ const Contact: React.FC = () => {
       Feel free to contact me and I will get back to you as soon as I can
     </p>
   );
+  const [isDisabled, setIsDisabled] = useState<boolean>(false);
 
   const formElement = useRef<HTMLFormElement>(null);
   const emailInputElement = useRef<HTMLInputElement>(null);
@@ -14,6 +15,8 @@ const Contact: React.FC = () => {
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    setIsDisabled(true);
 
     const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
 
@@ -36,6 +39,8 @@ const Contact: React.FC = () => {
                   Your message was successfully sent!
                 </p>
               );
+              formElement.current?.reset();
+              setIsDisabled(false);
             },
             (error) => {
               console.log("FAILED...", error.text);
@@ -44,16 +49,16 @@ const Contact: React.FC = () => {
                   There was a problem and your message was not sent!
                 </p>
               );
+              setIsDisabled(false);
             }
           );
-
-        formElement.current?.reset();
       } else {
         setMessage(
           <p className="text-red-700 text-xl font-bold uppercase">
             Please enter a message.
           </p>
         );
+        setIsDisabled(false);
 
         messageTextareaElement.current?.focus();
       }
@@ -63,6 +68,7 @@ const Contact: React.FC = () => {
           Please enter a valid e-mail.
         </p>
       );
+      setIsDisabled(false);
 
       emailInputElement.current?.focus();
     }
@@ -90,9 +96,12 @@ const Contact: React.FC = () => {
           className="p-4 grow placeholder-black placeholder-opacity-30 text-xl rounded-sm resize-none"
         />
         <input
+          disabled={isDisabled}
           type="submit"
           value="SEND MESSAGE"
-          className="py-4 bg-white text-[#628340] cursor-pointer text-xl rounded-sm"
+          className={`py-4 bg-white text-[#628340] cursor-pointer text-xl rounded-sm ${
+            isDisabled && "opacity-30 cursor-auto"
+          }`}
         />
       </form>
     </div>

@@ -16,12 +16,12 @@ const Contact: React.FC = () => {
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    setIsDisabled(true);
-
     const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
 
     if (emailInputElement.current?.value.match(emailRegex)) {
       if (messageTextareaElement.current?.value) {
+        setIsDisabled(true);
+
         emailjs
           .sendForm(
             "service_0stt544",
@@ -49,7 +49,6 @@ const Contact: React.FC = () => {
                   There was a problem and your message was not sent!
                 </p>
               );
-              setIsDisabled(false);
             }
           );
       } else {
@@ -58,7 +57,6 @@ const Contact: React.FC = () => {
             Please enter a message.
           </p>
         );
-        setIsDisabled(false);
 
         messageTextareaElement.current?.focus();
       }
@@ -68,7 +66,6 @@ const Contact: React.FC = () => {
           Please enter a valid e-mail.
         </p>
       );
-      setIsDisabled(false);
 
       emailInputElement.current?.focus();
     }

@@ -37,6 +37,7 @@ const Hero: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://github.com/DekiDejan"
+                title="GitHub Profile"
               >
                 <img src={githubIcon} alt="GitHub icon" />
               </a>
@@ -46,12 +47,17 @@ const Hero: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/dejan-mironski-panchevski/"
+                title="LinkedIn Profile"
               >
                 <img src={linkedinIcon} alt="LinkedIn icon" />
               </a>
             </div>
             <div className="opacity-0 animate-popUp3">
-              <a href={cvFile} download="CV - Dejan Mironski Panchevski">
+              <a
+                href={cvFile}
+                download="CV - Dejan Mironski Panchevski"
+                title="Download CV"
+              >
                 <img src={cvIcon} alt="CV icon" />
               </a>
             </div>

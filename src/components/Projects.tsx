@@ -77,60 +77,70 @@ const Projects: React.FC = () => {
             alt="Figma icon"
             width={80}
             className="hover:scale-125 duration-200"
+            title="Figma"
           />
           <img
             src={htmlIcon}
             alt="HTML icon"
             width={80}
             className="hover:scale-125 duration-200"
+            title="HTML"
           />
           <img
             src={cssIcon}
             alt="CSS icon"
             width={80}
             className="hover:scale-125 duration-200"
+            title="CSS"
           />
           <img
             src={javascriptIcon}
             alt="JavaScript icon"
             width={80}
             className="hover:scale-125 duration-200"
+            title="JavaScript"
           />
           <img
             src={tailwindIcon}
             alt="TailwindCSS icon"
             width={80}
             className="hover:scale-125 duration-200"
+            title="TailwindCSS"
           />
           <img
             src={reactIcon}
             alt="React icon"
             width={80}
             className="hover:scale-125 duration-200"
+            title="ReactJS"
           />
           <img
             src={typescriptIcon}
             alt="TypeScript icon"
             width={80}
             className="hover:scale-125 duration-200"
+            title="TypeScript"
           />
           <img
             src={nextIcon}
             alt="NextJS icon"
             width={80}
             className="hover:scale-125 duration-200"
+            title="Next.js"
           />
           <img
             src={gitIcon}
             alt="Git icon"
             width={80}
             className="hover:scale-125 duration-200"
+            title="Git"
           />
           <img
             src={githubIcon}
             alt="GitHub icon"
             width={80}
             className="hover:scale-125 duration-200"
+            title="GitHub"
           />
         </div>
         <div className="w-full h-20 bg-gradient-to-b from-transparent to-[#628340]"></div>

@@ -9,29 +9,31 @@ import cvFile from "../assets/CV - Dejan Mironski Panchevski.pdf";
 const Hero: React.FC = () => {
   return (
     <div
-      className="h-screen w-full bg-cover bg-center animate-fastOpacity"
+      className="h-screen w-full bg-cover bg-[75%] md:bg-[65%] lg:bg-center animate-fastOpacity"
       style={{ backgroundImage: `url(${desktopBg})` }}
     >
-      <div className="flex h-full mx-36">
-        <div className="basis-1/2 flex flex-col items-center justify-center h-full text-[#3A4231]">
+      <div className="flex h-full mx-8 sm:mx-16 md:mx-24 xl:mx-36">
+        <div className="basis-2/3 lg:basis-1/2 min-w-[50%] flex flex-col justify-center h-full text-[#3A4231]">
           <div className="animate-slideFromLeft">
-            <h1 className="text-9xl font-['Caveat'] tracking-[50px] -mr-6">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl xl:text-8xl 2xl:text-9xl font-['Caveat'] tracking-[30px] md:tracking-[40px] xl:tracking-[50px] -mr-6">
               DEJAN
             </h1>
-            <h2 className="text-7xl font-bold mt-4 mb-12">WEB DEVELOPER</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold sm:font-bold mt-4 mb-36 sm:mb-24 md:mb-12">
+              WEB DEVELOPER
+            </h2>
           </div>
-          <p className="text-xl text-white font-light opacity-90 animate-slideFromBottom">
+          <p className="text-sm sm:text-base xl:text-lg 2xl:text-xl text-white font-light opacity-90 animate-slideFromBottom">
             With a background in design, I bring creativity and technical
             expertise to build intuitive, modern web applications
           </p>
           <a
-            href="#about"
-            className="text-white text-2xl bg-[#3A4231] w-full text-center my-7 py-3 flex justify-center hover:opacity-90 duration-150 animate-slideFromBottom rounded-md"
+            href="#contact"
+            className="text-white text-lg md:text-xl xl:text-2xl bg-[#3A4231] w-full text-center my-7 py-2 md:py-3 flex justify-center hover:opacity-90 duration-150 animate-slideFromBottom rounded-md z-10"
           >
             <span className="opacity-90 mr-4">CONTACT ME</span>
             <img src={arrowDown} alt="Arrow down icon" className="inline" />
           </a>
-          <div className="flex gap-8">
+          <div className="flex gap-8 mx-auto z-10">
             <div className="opacity-0 animate-popUp1">
               <a
                 target="_blank"

@@ -24,10 +24,10 @@ const Projects: React.FC = () => {
     <>
       <div className="bg-white w-full">
         <div className="w-full h-20 bg-gradient-to-t from-transparent to-[#628340]"></div>
-        <h3 className="text-center text-5xl text-[#628340] font-bold py-12">
+        <h3 className="text-center text-3xl lg:text-4xl xl:text-5xl text-[#628340] font-bold py-12">
           MY PROJECTS
         </h3>
-        <div className="mx-auto w-2/3">
+        <div className="mx-auto w-3/4 lg:w-2/3">
           <Swiper
             effect={"cube"}
             loop={true}
@@ -68,10 +68,10 @@ const Projects: React.FC = () => {
             </SwiperSlide>
           </Swiper>
         </div>
-        <h3 className="text-center text-5xl text-[#628340] font-bold pt-12 pb-12">
+        <h3 className="text-center text-3xl lg:text-4xl xl:text-5xl text-[#628340] font-bold pt-12 pb-12">
           SKILLS
         </h3>
-        <div className="mx-auto w-2/3 flex justify-center gap-4 pb-24">
+        <div className="mx-auto w-2/3 flex flex-wrap justify-center gap-4 pb-24">
           <img
             src={figmaIcon}
             alt="Figma icon"

@@ -20,3 +20,23 @@ body {
 .swiper-cube .swiper-cube-shadow:before {
   background: #628340;
 }
+
+@media screen and (max-width: 1024px) {
+  .swiper-button-prev {
+    margin-left: -75px;
+  }
+
+  .swiper-button-next {
+    margin-right: -75px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-button-next {
+    display: none;
+  }
+}

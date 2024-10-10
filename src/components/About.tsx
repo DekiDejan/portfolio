@@ -3,16 +3,13 @@ import Contact from "./Contact";
 
 const About: React.FC = () => {
   return (
-    <div className="pt-12 pb-24 mx-36">
-      <h3
-        className="text-5xl text-white opacity-90 font-bold text-center"
-        id="about"
-      >
+    <div className="pt-12 pb-24 mx-16 md:mx-24 xl:mx-36">
+      <h3 className="text-3xl lg:text-4xl xl:text-5xl text-white opacity-90 font-bold text-center">
         ABOUT ME
       </h3>
-      <div className="flex gap-8 mt-12">
+      <div className="flex flex-col md:flex-row gap-8 mt-12">
         <div className="basis-1/2">
-          <p className="text-white opacity-90 text-xl italic font-light text-justify">
+          <p className="text-white opacity-90 text-lg lg:text-xl italic font-light text-justify">
             &nbsp;I'm Dejan, a front-end web developer who loves creating
             websites that are both visually appealing and easy to use. My
             experience working with React, Next.js, TypeScript, and TailwindCSS

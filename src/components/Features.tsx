@@ -6,7 +6,7 @@ import leftArrow from "../assets/feature left arrow.png";
 
 const Features: React.FC = () => {
   return (
-    <div className="my-24 mx-16 md:mx-24 xl:mx-36">
+    <div className="my-12 sm:my-24 mx-8 sm:mx-16 md:mx-24 xl:mx-36">
       <a
         target="_blank"
         rel="noopener noreferrer"

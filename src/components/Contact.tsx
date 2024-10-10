@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 
 const Contact: React.FC = () => {
   const [message, setMessage] = useState<JSX.Element>(
-    <p className="text-white text-lg lg:text-xl font-bold uppercase">
+    <p className="text-white sm:text-lg lg:text-xl font-bold uppercase">
       Feel free to contact me and I will get back to you as soon as I can
     </p>
   );
@@ -35,7 +35,7 @@ const Contact: React.FC = () => {
             () => {
               console.log("SUCCESS!");
               setMessage(
-                <p className="text-[#C1FF82] text-lg lg:text-xl font-bold uppercase">
+                <p className="text-[#C1FF82] sm:text-lg lg:text-xl font-bold uppercase">
                   Your message was successfully sent!
                 </p>
               );
@@ -45,7 +45,7 @@ const Contact: React.FC = () => {
             (error) => {
               console.log("FAILED...", error.text);
               setMessage(
-                <p className="text-red-700 text-lg lg:text-xl font-bold uppercase">
+                <p className="text-red-700 sm:text-lg lg:text-xl font-bold uppercase">
                   There was a problem and your message was not sent!
                 </p>
               );
@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
           );
       } else {
         setMessage(
-          <p className="text-red-700 text-lg lg:text-xl font-bold uppercase">
+          <p className="text-red-700 sm:text-lg lg:text-xl font-bold uppercase">
             Please enter a message.
           </p>
         );
@@ -62,7 +62,7 @@ const Contact: React.FC = () => {
       }
     } else {
       setMessage(
-        <p className="text-red-700 text-lg lg:text-xl font-bold uppercase">
+        <p className="text-red-700 sm:text-lg lg:text-xl font-bold uppercase">
           Please enter a valid e-mail.
         </p>
       );
@@ -84,19 +84,19 @@ const Contact: React.FC = () => {
           type="email"
           name="email"
           placeholder="Your e-mail"
-          className="p-4 placeholder-black placeholder-opacity-30 text-lg lg:text-xl rounded-sm"
+          className="p-4 placeholder-black placeholder-opacity-30 sm:text-lg lg:text-xl rounded-sm"
         />
         <textarea
           ref={messageTextareaElement}
           name="message"
           placeholder="Your message"
-          className="p-4 grow min-h-40 max-h-80 placeholder-black placeholder-opacity-30 text-lg lg:text-xl rounded-sm resize-none"
+          className="p-4 grow min-h-40 max-h-80 placeholder-black placeholder-opacity-30 sm:text-lg lg:text-xl rounded-sm resize-none"
         />
         <input
           disabled={isDisabled}
           type="submit"
           value="SEND MESSAGE"
-          className={`py-4 bg-white text-[#628340] cursor-pointer text-lg lg:text-xl rounded-sm ${
+          className={`py-4 bg-white text-[#628340] cursor-pointer sm:text-lg lg:text-xl rounded-sm ${
             isDisabled && "opacity-30 cursor-auto"
           }`}
         />

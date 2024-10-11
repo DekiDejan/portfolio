@@ -67,7 +67,7 @@ const Hero: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 w-full h-[15%] bg-gradient-to-b from-transparent to-[#628340]"></div>
+      <div className="hidden sm:block absolute bottom-0 w-full h-[15%] bg-gradient-to-b from-transparent to-[#628340]"></div>
     </div>
   );
 };

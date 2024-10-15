@@ -4,7 +4,7 @@ import arrowDown from "../assets/icons/down-arrow 1.svg";
 import githubIcon from "../assets/icons/github.svg";
 import linkedinIcon from "../assets/icons/linkedin.svg";
 import cvIcon from "../assets/icons/cv.svg";
-import cvFile from "../assets/CV - Dejan Mironski Panchevski.pdf";
+import cvFile from "../assets/CV - Dejan Mironski Panchevski - oct 2024.pdf";
 
 const Hero: React.FC = () => {
   return (

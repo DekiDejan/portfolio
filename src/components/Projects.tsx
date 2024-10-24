@@ -14,6 +14,7 @@ import cssIcon from "../assets/icons/technologies/css.png";
 import javascriptIcon from "../assets/icons/technologies/js.png";
 import tailwindIcon from "../assets/icons/technologies/tailwind-css.png";
 import reactIcon from "../assets/icons/technologies/react.png";
+import reduxIcon from "../assets/icons/technologies/redux.png";
 import typescriptIcon from "../assets/icons/technologies/typescript.png";
 import nextIcon from "../assets/icons/technologies/nextjs-icon-svgrepo-com.svg";
 import gitIcon from "../assets/icons/technologies/git.png";
@@ -113,6 +114,13 @@ const Projects: React.FC = () => {
             width={80}
             className="hover:scale-125 duration-200"
             title="ReactJS"
+          />
+          <img
+            src={reduxIcon}
+            alt="Redux icon"
+            width={80}
+            className="hover:scale-125 duration-200"
+            title="Redux"
           />
           <img
             src={typescriptIcon}

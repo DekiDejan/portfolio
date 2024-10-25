@@ -1,5 +1,5 @@
 import React from "react";
-import desktopBg from "../assets/desktop bg.png";
+import bgImage from "../assets/bg image.png";
 import arrowDown from "../assets/icons/down-arrow 1.svg";
 import githubIcon from "../assets/icons/github.svg";
 import linkedinIcon from "../assets/icons/linkedin.svg";
@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
   return (
     <div
       className="h-screen w-full bg-cover bg-[90%] sm:bg-[75%] md:bg-[65%] lg:bg-center animate-fastOpacity"
-      style={{ backgroundImage: `url(${desktopBg})` }}
+      style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div className="flex h-full mx-8 sm:mx-16 md:mx-24 xl:mx-36">
         <div className="sm:basis-2/3 lg:basis-1/2 min-w-[50%] pb-32 sm:pb-0 flex flex-col justify-center h-full text-[#3A4231]">

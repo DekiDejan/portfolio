@@ -45,7 +45,7 @@ const Projects: React.FC = () => {
             }}
             autoplay={{
               delay: 3000,
-              disableOnInteraction: false,
+              disableOnInteraction: true,
               pauseOnMouseEnter: true,
             }}
           >
@@ -55,7 +55,13 @@ const Projects: React.FC = () => {
                 rel="noopener noreferrer"
                 href="https://dekidejan.github.io/REST-Countries-API-with-color-theme-switcher---FrontEndMentor-Challenge/"
               >
-                <img src={countriesImage} alt="Countries screenshot image" />
+                <div className="bg-black">
+                  <img
+                    src={countriesImage}
+                    alt="Countries screenshot image"
+                    className="hover:opacity-90 transition-opacity"
+                  />
+                </div>
               </a>
             </SwiperSlide>
             <SwiperSlide>
@@ -64,7 +70,13 @@ const Projects: React.FC = () => {
                 rel="noopener noreferrer"
                 href="https://dekidejan.github.io/Multi-Step-Form/"
               >
-                <img src={formImage} alt="Multi step form screenshot image" />
+                <div className="bg-black">
+                  <img
+                    src={formImage}
+                    alt="Multi step form screenshot image"
+                    className="hover:opacity-90 transition-opacity"
+                  />
+                </div>
               </a>
             </SwiperSlide>
           </Swiper>
